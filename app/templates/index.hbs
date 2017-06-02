@@ -1,0 +1,31 @@
+<h3>Welcome to the code forum!</h3>
+<h5>Click on a question below to view or add answers, or add your own question!</h5>
+
+<div class="row">
+<!-- display linked list of questions -->
+
+  <div class="col-xs-8">
+    <h3>Questions:</h3>
+    {{#each model.questions as |question|}}
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          {{question.title}}
+        </div>
+        <div class="panel-body">
+          <p>
+            {{question.preview}}.....
+          </p>
+        </div>
+        <div class="panel-footer">
+          <h6>by {{question.author}}</h6>
+        </div>
+      </div>
+
+    {{/each}}
+  </div>
+<!-- add new question -->
+  <div class="col-xs-4">
+    <h4>Add a new question:</h4>
+    {{new-question saveQuestion="saveQuestion" }}
+  </div>
+</div>

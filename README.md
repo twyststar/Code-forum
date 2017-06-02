@@ -3,6 +3,25 @@
 
 This is a question and answer forum for code and tech questions. Created as a solo project for Epicodus EmberJS.
 
+## Prerequisites
+
+You will need the following things properly installed on your computer.
+
+* [Git](https://git-scm.com/)
+* [Node.js](https://nodejs.org/) (with NPM)
+* [Ember CLI](https://ember-cli.com/)
+* [PhantomJS](http://phantomjs.org/)
+
+## Installation
+
+* `git clone <repository-url>` this repository
+* `cd code-forum`
+* `npm install`
+
+## Running / Development
+
+* `ember serve`
+* Visit your app at [http://localhost:4200](http://localhost:4200).
 
 ##Planning
  1. Dependancies
@@ -23,15 +42,16 @@ This is a question and answer forum for code and tech questions. Created as a so
 3. Integration
 
 * Routes/components:
+  * Question model
+  * Answer model
+    * Index route/html as home page, to display question-tile component and new-question component.
+      * New-question component/html page for adding new question to model.
+      * Question-tile component/html displayed on index to create linked list to specific Question.
 
-  * Index route/html as home page, to display question-tile component and new-question component.
-    * New-question component/html page for adding new question to model.
-    * Question-tile component/html displayed on index to create linked list to specific Question.
-
-  * Question route/html page as landing page for a specific question and it's interactions including adding new answers to question, edit and delete for both questions and answers.
-    * Update-question component/html page for updating question.
-    * Answer-tile component/html page for showing answers.
-    * New-answer component/html page for adding new answers to a question.
+    * Question route/html page as landing page for a specific question and it's interactions including adding new answers to question, edit and delete for both questions and answers.
+      * Update-question component/html page for updating question.
+      * Answer-tile component/html page for showing answers.
+      * New-answer component/html page for adding new answers to a question.
 
 4. UX/UI
   * Include and modify bootstrap.

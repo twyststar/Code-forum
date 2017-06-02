@@ -16,7 +16,14 @@ module.exports = function(environment) {
         Date: false
       }
     },
-
+    firebase: {
+      apiKey: "AIzaSyAbKZRk0JYFvXt_5jcHqPr2PSC56rqB7ek",
+    authDomain: "code-forum-92d1c.firebaseapp.com",
+    databaseURL: "https://code-forum-92d1c.firebaseio.com",
+    projectId: "code-forum-92d1c",
+    storageBucket: "code-forum-92d1c.appspot.com",
+    messagingSenderId: "846099158066"
+      },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

@@ -1,0 +1,10 @@
+{ "questions": [{
+    "title": "Issues with Ember",
+    "content": "Nothing will display on my index, but all my routes are in place and I have html. What is wrong?",
+    "author": "Star"
+  }, {
+    "title": "Issues with Ember saving",
+    "content": "I can't get things to save to my firebase using ember. ",
+    "author": "Lorelai"
+  }]
+}
