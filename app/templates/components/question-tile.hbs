@@ -1,0 +1,17 @@
+{{#each model.questions as |question|}}
+  {{#link-to 'question' question.id}}
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      {{question.title}}
+    </div>
+    <div class="panel-body">
+      <p>
+        {{question.preview}}.....
+      </p>
+    </div>
+    <div class="panel-footer">
+      <h6>by {{question.author}}</h6>
+    </div>
+  </div>
+  {{/link-to}}
+{{/each}}

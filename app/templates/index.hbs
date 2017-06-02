@@ -6,22 +6,7 @@
 
   <div class="col-xs-8">
     <h3>Questions:</h3>
-    {{#each model.questions as |question|}}
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          {{question.title}}
-        </div>
-        <div class="panel-body">
-          <p>
-            {{question.preview}}.....
-          </p>
-        </div>
-        <div class="panel-footer">
-          <h6>by {{question.author}}</h6>
-        </div>
-      </div>
-
-    {{/each}}
+    {{question-tile model=model}}
   </div>
 <!-- add new question -->
   <div class="col-xs-4">
