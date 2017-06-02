@@ -1,45 +1,42 @@
-# code-forum
+#Code-forum
+===========
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a question and answer forum for code and tech questions. Created as a solo project for Epicodus EmberJS.
 
-## Prerequisites
 
-You will need the following things properly installed on your computer.
+##Planning
+ 1. Dependancies
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with NPM)
-* [Ember CLI](https://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+* Ember dependancies can be found in the package.json file.
 
-## Installation
+2. Specs
 
-* `git clone <repository-url>` this repository
-* `cd code-forum`
-* `npm install`
+* Questions will include the content of the question itself, an author, and additional notes.
+* Answers will include the content of the answer and the author.
+* Site will include a navbar that appears on all pages.
+* Site will list all questions on the homepage, displaying only the question and the name of the author.
+* Site will allow users to click a question, to be routed to another page containing additional information and question details.
+* Site will allow users to add and edit questions.
+* Site will allow users to add answers to a question.
+* Answers will be added and viewed on the same page as the question they respond to.
 
-## Running / Development
+3. Integration
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Routes/components:
 
-### Code Generators
+  * Index route/html as home page, to display question-tile component and new-question component.
+    * New-question component/html page for adding new question to model.
+    * Question-tile component/html displayed on index to create linked list to specific Question.
 
-Make use of the many generators for code, try `ember help generate` for more details
+  * Question route/html page as landing page for a specific question and it's interactions including adding new answers to question, edit and delete for both questions and answers.
+    * Update-question component/html page for updating question.
+    * Answer-tile component/html page for showing answers.
+    * New-answer component/html page for adding new answers to a question.
 
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
+4. UX/UI
+  * Include and modify bootstrap.
+  * Utilize custom styles.
+  * Link everything for simple navigation.
 
 ## Further Reading / Useful Links
 
@@ -48,3 +45,8 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+##Contact
+  _Feel free to email with any suggestions, questions, or concerns- lewis.start0905@gmail.com_
+
+####License: MIT
