@@ -7,12 +7,8 @@ a:hover {
 .btn:hover {
   color: #ff9b44;
 }
-.sidebar {
-  min-height: 1000px;
-  color: white;
-  background-color: #0b2d42
 
-}
+
 .jumbotron {
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,4 +78,22 @@ a:hover {
 
 .panel {
   border: 1px solid #0b2d42;
+}
+
+
+.panel-profile {
+  position: static;
+}
+.pro-heading {
+  height: 150px;
+}
+.pro-body{
+  height: 150px;
+}
+.panel-profile-img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: relative;
+  margin-top: -67px;
 }

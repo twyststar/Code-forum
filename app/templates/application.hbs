@@ -1,18 +1,20 @@
 <div class="container">
+  <div class="row">
   <div class="jumbotron">
     <h1>Code Forum</h1>
     <div class="navbar">
       <ul class='nav nav-tabs'>
         <li>{{#link-to 'index'}}Home{{/link-to}}</li>
+        <li>{{#link-to 'about'}}About{{/link-to}}</li>
       </ul>
     </div>
   </div>
-  <div class="row">
-    <div class="col-xs-10">
+
+    <div class="col-xs-10 well">
       {{outlet}}
     </div>
-    <div class="col-xs-2 panel ">
-      <div class="panel-heading">
+    <div class="col-xs-2">
+      <div class="panel-heading answer">
           <h5>Suggested Links:</h5>
       </div>
       <div class="panel-body">
@@ -25,7 +27,7 @@
         <a href="https://www.codecademy.com/">Codecademy</a>
         <br>
         <a href="https://www.freecodecamp.com/">FreeCodeCamp</a>
-        
+
       </div>
     </div>
   </div>
