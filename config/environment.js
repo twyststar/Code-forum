@@ -16,6 +16,11 @@ module.exports = function(environment) {
         Date: false
       }
     },
+
+    moment: {
+      outputFormat: 'LLLL',
+      includeLocales: true
+    },
     firebase: {
       apiKey: "AIzaSyAbKZRk0JYFvXt_5jcHqPr2PSC56rqB7ek",
     authDomain: "code-forum-92d1c.firebaseapp.com",

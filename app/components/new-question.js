@@ -21,7 +21,7 @@ export default Ember.Component.extend({
         content: this.get('content'),
         preview: preview,
         author: this.get('author'),
-
+        createdAt: moment().format('LLLL')
       };
       this.set('addNewQuestion', false);
       this.sendAction('saveQuestion', params)
