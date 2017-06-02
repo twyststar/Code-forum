@@ -11,6 +11,6 @@
     <h5>Asked by {{question.author}} on {{question.createdAt}}</h5>
   </div>
 </div>
-
+{{question-update question=question update="update" destroyQuestion='destroyQuestion'}}
 <h4>Answers:</h4>
 {{answer-tile answers=question.answers}}
