@@ -1,5 +1,5 @@
-<div class="panel panel-default">
-  <div class="panel-heading">
+<div class="panel ">
+  <div class="panel-heading question">
     <h2>{{question.title}}</h2>
   </div>
   <div class="panel-body">
@@ -7,10 +7,13 @@
       {{question.content}}
     </p>
   </div>
-  <div class="panel-footer">
+  <div class="panel-footer question-foot">
     <h5>Asked by {{question.author}} on {{question.createdAt}}</h5>
+    {{question-update question=question update="update" destroyQuestion='destroyQuestion'}}
   </div>
+
 </div>
-{{question-update question=question update="update" destroyQuestion='destroyQuestion'}}
-<h4>Answers:</h4>
+
+<h3>Answers: ({{question.answers.length}})</h3>
+<br>
 {{answer-tile answers=question.answers}}

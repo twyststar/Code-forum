@@ -1,15 +1,17 @@
 {{#each model.questions as |question|}}
   {{#link-to 'question' question.id}}
-  <div class="panel panel-default">
-    <div class="panel-heading">
+  <div class="panel ">
+    <div class="panel-heading question ">
       <h2>{{question.title}}</h2> {{question.createdAt}}
+      <br>
+      <p>Answers: ({{question.answers.length}})</p>
     </div>
     <div class="panel-body">
       <p>
         {{question.preview}}.....
       </p>
     </div>
-    <div class="panel-footer">
+    <div class="panel-footer question-foot">
       <h6>by {{question.author}}</h6>
     </div>
   </div>

@@ -1,6 +1,6 @@
 {{#if updateAnswer}}
-<div class="panel panel-success">
-  <div class="panel-heading">
+<div class="panel">
+  <div class="panel-heading answer">
     <h1>Update Answer:</h1>
   </div>
 
@@ -14,7 +14,7 @@
         <label for="content">Your Answer</label>
         {{textarea class="form-control" rows="6" value=content id="content" placeholder=answer.content}}
       </div>
-      <div class="panel-footer">
+      <div class="panel-footer answer-foot">
         <button class="btn bg-success"{{action 'update' answer}}>Update</button>
       </div>
       </form>
@@ -23,5 +23,5 @@
   </div>
 </div>
 {{else}}
-<button class="btn bg-warning" {{action "updateAnswerFormShow" answer}}>Edit/delete</button>
+<button class="btn bg-warning edit" {{action "updateAnswerFormShow" answer}}>Edit/delete</button>
 {{/if}}

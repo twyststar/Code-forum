@@ -1,6 +1,6 @@
 {{#if addNewQuestion}}
-<div class="panel panel-success">
-  <div class="panel-heading">
+<div class="panel">
+  <div class="panel-heading question">
     <h1>New Question:</h1>
   </div>
   <div class="panel-body">
@@ -18,8 +18,8 @@
         <label for="content">Your Question</label>
         {{textarea class="form-control" rows="6" value=content id="content"}}
       </div>
-      <div class="panel-footer">
-        <button class="btn bg-success"{{action 'saveQuestion'}}>Join</button>
+      <div class="panel-footer question-foot">
+        <button class="btn question"{{action 'saveQuestion'}}>Ask!!</button>
       </div>
       </form>
     </div>
@@ -28,5 +28,5 @@
 
 
 {{else}}
-  <button class="btn bg-success"{{action 'questionFormShow'}}>Create New Question</button>
+  <button class="btn question"{{action 'questionFormShow'}}>Create New Question</button>
 {{/if}}

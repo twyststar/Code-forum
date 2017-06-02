@@ -1,14 +1,14 @@
 {{#each answers as |answer|}}
 {{#link-to 'answer' answer.id}}
-<div class="panel panel-success">
-  <div class="panel-heading">
+<div class="panel half">
+  <div class="panel-heading answer">
     <h5>Answered on {{answer.createdAt}}</h5>
   </div>
   <div class="panel-body">
     <p>{{answer.content}}</p>
   </div>
-  <div class="panel-footer">
-    <h6>By {{answer.author}}</h6>
+  <div class="panel-footer answer-foot">
+    <h6>Answered By {{answer.author}}</h6>
   </div>
 </div>
 {{/link-to}}

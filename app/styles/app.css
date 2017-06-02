@@ -1,0 +1,85 @@
+a .panel:hover {
+  box-shadow: 7px 7px #888888;
+}
+a:hover {
+  text-decoration: none;
+}
+.btn:hover {
+  color: #ff9b44;
+}
+.sidebar {
+  min-height: 1000px;
+  color: white;
+  background-color: #0b2d42
+
+}
+.jumbotron {
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: "FlipH";
+    filter: FlipH;
+  background-image: url("http://www.cert.org/rotatorimages/images/C-_Rotator.jpg");
+}
+.jumbotron h1{
+
+  color: white;
+  -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: "FlipH";
+    filter: FlipH;
+}
+.navbar {
+  -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: "FlipH";
+    filter: FlipH;
+}
+.nav{
+  color: white;
+  border-width: 50%;
+}
+
+.question-foot {
+  background-color: #005d84;
+  color: #ff9b44;
+}
+
+.question {
+  color: white;
+  background-color: #0b2d42;
+}
+
+.answer {
+  background-color: #214a51;
+  color: white;
+}
+
+.answer-foot {
+  background-color: #33587c;
+  color: #40cee8;
+}
+
+.edit {
+  margin-top: -30px;
+  float: right;
+}
+
+.half {
+  display: inline-block;
+  width: 50%;
+}
+
+.panel {
+  border: 1px solid #0b2d42;
+}
