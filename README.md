@@ -1,7 +1,11 @@
 #Code-forum
 ===========
 
-This is a question and answer forum for code and tech questions. Created as a solo project for Epicodus EmberJS.
+This is a question and answer forum for code and tech questions. It allows users to post questions and answers, and vies other users questions and answers. Created as a solo project for Epicodus EmberJS using Ember, Firebase, HTML, CSS and Bootstrap.
+
+## Current Version Date:
+
+5.2.2017
 
 ## Prerequisites
 
@@ -23,11 +27,7 @@ You will need the following things properly installed on your computer.
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-##Planning
- 1. Dependancies
-
-* Ember dependancies can be found in the package.json file.
-
+<!-- ##Planning
 2. Specs
 
 * Questions will include the content of the question itself, an author, and additional notes.
@@ -56,7 +56,7 @@ You will need the following things properly installed on your computer.
 4. UX/UI
   * Include and modify bootstrap.
   * Utilize custom styles.
-  * Link everything for simple navigation.
+  * Link everything for simple navigation. -->
 
 ## Further Reading / Useful Links
 
@@ -68,5 +68,5 @@ You will need the following things properly installed on your computer.
 
 ##Contact
   _Feel free to email with any suggestions, questions, or concerns- lewis.start0905@gmail.com_
-
+####Copyright 2017 Starlynne Start
 ####License: MIT
