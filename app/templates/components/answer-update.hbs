@@ -1,0 +1,27 @@
+{{#if updateAnswer}}
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <h1>Update Answer:</h1>
+  </div>
+
+  <div class="panel-body">
+    <div>
+      <form>
+      <div class="panel-heading">
+        {{answer.author}}
+      </div>
+      <div class="form-group">
+        <label for="content">Your Answer</label>
+        {{textarea class="form-control" rows="6" value=content id="content" placeholder=answer.content}}
+      </div>
+      <div class="panel-footer">
+        <button class="btn bg-success"{{action 'update' answer}}>Update</button>
+      </div>
+      </form>
+    </div>
+    <button class="btn bg-danger"{{action 'delete' answer}}>Delete</button>
+  </div>
+</div>
+{{else}}
+<button class="btn bg-warning" {{action "updateAnswerFormShow" answer}}>Edit/delete</button>
+{{/if}}

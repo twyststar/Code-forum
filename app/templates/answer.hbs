@@ -1,1 +1,16 @@
-{{outlet}}
+
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <h5>Answered on {{model.createdAt}}</h5>
+
+  </div>
+  <div class="panel-body">
+    <p>{{model.content}}</p>
+  </div>
+  <div class="panel-footer">
+    <h6>By {{model.author}}</h6>
+  </div>
+</div>
+
+{{answer-update answer=model update="update" destroyAnswer="destroyAnswer"}}
+<br>
